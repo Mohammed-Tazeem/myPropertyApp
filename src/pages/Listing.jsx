@@ -39,10 +39,10 @@ function Listing() {
 
 
   return (
-    <main>
+    <main className='section-container'>
         {/*Add your Carousel here */}
-        <div >
-            <img src={listing.imgUrls[0]} style={{width:'1048px'}} alt='Carosel'/>
+        <div className=' container max-w-5xl mx-auto px-6 py-12'>
+            <img src={listing.imgUrls[0]} className='object-contain border-red-500 rounded-2xl' alt='Carosel'/>
         </div>
 
 

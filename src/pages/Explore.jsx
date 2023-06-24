@@ -8,11 +8,11 @@ function Explore() {
   return (
     <div className='explore'>
       <header className='pageHeader'>
-        Explore
+        Explore Properties
       </header>
       <main>
         {/*Slider */}
-        <Slider/>
+        <Slider />
 
         <p className='exploreCategoryHeading'>
           Categories
