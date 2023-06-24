@@ -117,7 +117,7 @@ function Category() {
         ) : listings && listings.length > 0 ? 
         (<>
         <main>
-            <ul className='category'>
+            <ul className='category flex flex-row'>
                 {listings.map((listing)=>(
                   <ListingItem 
                   listing={listing.data}
