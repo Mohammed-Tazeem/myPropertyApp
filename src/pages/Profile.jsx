@@ -165,7 +165,7 @@ function Profile() {
             <p className='listingText'>
             Your Listings
             </p> 
-            <ul className='listingsText'>
+            <ul className='listingsText flex flex-row'>
                 {listings.map((listing)=>(
                     <ListingItem key={listing.id}
                       listing={listing.data}

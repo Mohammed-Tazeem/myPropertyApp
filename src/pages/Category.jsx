@@ -77,7 +77,7 @@ function Category() {
                 where('type','==',params.categoryName),
                 orderBy('timestamp','desc'),
                 startAfter(lastFetchedListing),
-                limit(1)
+                limit(10)
             )
 
             //Execute The query

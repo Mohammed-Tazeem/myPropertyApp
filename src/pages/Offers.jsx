@@ -35,7 +35,7 @@ function Offers() {
                     listingsRef,
                     where('offer','==',true),
                     orderBy('timestamp','desc'),
-                    limit(1)
+                    limit(4)
                 )
 
                 //Execute The query
@@ -80,7 +80,7 @@ function Offers() {
                 where('offer','==',true),
                 orderBy('timestamp','desc'),
                 startAfter(lastFetchedListing),
-                limit(1)
+                limit(4)
             )
 
             //Execute The query
@@ -120,9 +120,13 @@ function Offers() {
         ) : listings && listings.length > 0 ? 
         (<>
         <main>
-            <ul className='category'>
+            <ul className='category flex flex-row'>
                 {listings.map((listing)=>(
-                  <ListingItem listing={listing.data}/>  
+                  <ListingItem listing={listing.data}
+                  id={listing.id}
+                  key={listing.id}
+                  />  
+                    
                 ))}
 
             </ul>
